@@ -12,6 +12,7 @@ todolist.addEventListener("click", deleteCheck);
 function addTodo(event){
     if(todoInput.value==''){
         alert('Add a task first');
+        event.preventDefault();
     }else{
         event.preventDefault();
     const todoDiv= document.createElement("div");
