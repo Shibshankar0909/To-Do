@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(120deg, rgb(237, 199, 173), rgb(234, 137, 63));
+}
+
+header{
+    font-size: 1.35rem;
+    color: rgb(3, 2, 1);
+}
+
+form{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Todo-input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(238, 219, 213);
+    margin: 5px;
+    padding: 12px 12px 12px 12px;
+}
+.Todo-button{
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(238, 219, 213);
+}
+
+.Todo-button:hover{
+    color: white;
+    background-color: rgb(147, 175, 228);
+    cursor: pointer;
+}
+textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+    padding-left: 12px;
+}
+
+.todo{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.todo-item{
+    font-size: 1.2rem;
+    
+}
+.paraclass{
+    display: inline;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 2px;
+    background: linear-gradient(120deg , rgb(208, 132, 132),rgb(139, 139, 240));
+}
+.doneclass{
+    margin-left: 12px;
+    margin-right: 4px;
+    border-radius: 5px;
+    background-color: rgb(238, 219, 213);
+    width: 60px;
+    height: 25px;
+}
+
+.delclass{
+    border-radius: 5px;
+    background-color: rgb(238, 219, 213);
+    width: 60px;
+    height: 25px;
+}
+
+.doneclass:hover{
+    color: white;
+    background-color: rgb(147, 175, 228);
+    cursor: pointer;
+}
+
+.delclass:hover{
+    color: white;
+    background-color: rgb(147, 175, 228);
+    cursor: pointer;
+}
+
+.description{
+    border: 2px solid black;
+    font-style: italic;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background: linear-gradient(120deg, grey, rgb(214, 214, 173));
+    padding: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
+    transition: all 0.5s ease;
+}
+.deleted{
+    transform: translateY(8rem) translateX(5rem) rotateZ(10deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
